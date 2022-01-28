@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang = "en" onclick = "jump()">
+<head>
+	<meta charset="UTF-8">
+	<title>CS25320 Assignment #1</title>
+	<link href = "stylesheet.css" rel ="stylesheet">
+</head>
+<body bgcolor="#a6a6a6">
+<!---This is the title--->
+	<h1 class="title"><U>CS25320 HTML/Canvas Game Assignment</U></h1>
+<!---This is the navigation bar--->
+	<div class="topnav">
+	   <a class="active" href="Index.html">Home</a>
+	   <a href ="Help.html"> Help</a>
+	   <a href="About.html">About</a>
+	   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+	   </a>
+	</div>
+<!---Divs for the game--->
+	<div id ="game">
+		<div id ="obstacles"></div>
+		<div id ="hole"></div>
+		<div id ="gameCharacter"></div>
+		<div id ="score">Score: O</div>
+		<div id ="gameoverScreen">
+			<h1 class = "title"></h1>
+			<h3 class = "score"></h3>
+			<button>Play Again ?</button>
+			<div id ="backdrop"></div>
+		</div>
+	</div>
+<!---Script file--->
+	<script src ="canvas.js"></script>
+<!---HTML Form Title--->
+	<h3 class = "formTitle">Enter your Game Username: </h3>
+<!---HTML Form--->
+	<form class="htmlForm" action ="gameNameForm.php" method ="post">
+		<input type ="text" name="username" placeholder="Enter your Username: " required>
+		<input type = "submit" name = "submit">
+	</form>
+<!---Divs for the game--->
+	<div class= "gameInstructions">
+		<h2><U>Quick Game Controls: </U></h2>
+		<h3>Aim of the game : Get through as many obstacles </h3>
+		<h3>To control the bird : Click within the game box to make bird jump</h3>
+		<h3>Little bit of advice: Click consistently with gaps to climb higher on the canvas ;)</h3>
+		<h2>Good Luck !</h2>
+	</div>
+<body>
+</html>

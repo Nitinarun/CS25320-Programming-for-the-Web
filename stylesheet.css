@@ -1,0 +1,185 @@
+/*This is the style sheet for all HTML files*/
+
+/*This is the CSS for the canvas game*/
+ **{
+    padding: 0;
+    margin: 0;
+	overflow:hidden;
+}
+/* This is Reused code/images from Tudor Todorescu */
+#game{
+    width: 800px;
+    height: 500px;
+    border: 3px solid #009933;
+    margin: auto;
+    overflow: hidden;
+	position: absolute;
+    left: 570px;
+    top: 130px;
+	background : url('world.jpg');
+	background-position: center left;
+}
+#obstacles{
+    width: 45px;
+    height: 500px;
+	background : url('obstaclesbg.jpg');
+	background-position: center;
+	background-size: contain;
+    position: relative;
+    left: 500px;
+    animation: block 2s infinite linear;
+}
+@keyframes block{
+    0%{left:400px}
+    100%{left:-50px}
+}
+#hole{
+    width: 47px;
+    height: 193px;
+	position: relative;
+	left: 400px;
+    top: -500px;
+	background : url('holebg.jpg');
+	background-size: contain;
+	background-repeat: no-repeat;
+    animation: block 2s infinite linear;
+	
+}
+#gameCharacter{
+    width: 40px;
+    height: 30px;
+    position: absolute;
+    top: 100px;
+	background : url('flappyBird.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	top: 20; 
+	left: 20;
+}
+#score{
+	position: absolute;
+	top: 15px;
+	left: 600px;
+	color: white;
+	font-size: 50px;
+	font-weight: normal;
+}
+#gameoverScreen{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#gameoverScreen.title,
+#gameoverScreen.score,
+#gameoverScreen button{
+	position: absolute;
+	z-index: 1;
+	left: calc(50% - 102px);
+	width: 204px;
+	top: 80px;
+	left: 590px;
+	text-align: center;
+}
+#gameoverScreen.title{
+	margin-top: -65px;
+	font-size: 50px;
+}
+
+/*This is the CSS for "Index.html" */
+ .title{
+	 text-align: center;
+	 font-family:courier new
+}
+.topnav{
+	overflow: hidden;
+	background-color: #999999;
+	font-family: courier new;
+}
+.topnav a{
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 20px;
+}
+.topnav a:hover{
+	background-color: #ddd;
+	color: black;
+}
+.topnav a.active{
+	background-color: #2eb82e;
+	color: white;
+}
+.topnav .icon{
+	display: none;
+}
+.formTitle{
+	position: absolute;
+	width: 800px;
+	height: 10px;
+	top: 620px;
+	left: 740px;
+}
+.htmlForm{
+	position: absolute;
+	width: 50px;
+	height: 10px;
+	top: 640px;
+	left: 980px;
+}
+.gameInstructions{
+	font-family:courier new;
+	text-align:center;
+	position: absolute;
+	width: 800px;
+	height: 250px;
+	top: 690px;
+	left: 570px;
+	border:3px solid #00802b;
+
+}
+
+/*This is the CSS for "Help.html" */
+.helpInstructionTitle{
+	font-family:courier new;
+	text-decoration: underline;
+	position: absolute;
+	left: 10px;
+	top: 120px;
+}
+.helpInstructions{
+	padding: 5px;
+	font-family:courier new;
+	border:3px solid #00802b;
+	position: absolute;  
+	left:10px; 
+	top: 170px;
+}
+
+/*This is the CSS for "About.html" */
+.aboutTextTitle{
+	font-family:courier new;
+	text-decoration: underline;
+	position: absolute;
+	left: 10px;
+	top: 120px;
+}
+.aboutText{
+	font-family:courier new;
+	padding: 5px;
+	border:3px solid #00802b;
+	position: absolute;  
+	left:10px; 
+	top: 170px;
+}
+.image{
+	position: absolute;
+	width: 50%;
+	height: 500px;
+	top: 490px;
+	left: 390px;
+}

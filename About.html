@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>CS25320 Assignment #1</title>
+	<link href = "stylesheet.css" rel = "stylesheet">
+</head>
+<body bgcolor="#a6a6a6">
+<!---This is the title--->
+	<h1 class="title" align = "center"><U>CS25320 HTML/Canvas Game Assignment</U></h1>
+<!---This is the navigation bar--->
+	<div class="topnav">
+	   <a class="active" href="Index.html">Home</a>
+	   <a href ="Help.html"> Help</a>
+	   <a href="About.html">About</a>
+	   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+	   </a>
+	</div>
+<!---Description text for the About page--->
+	<div class = "aboutTextTitle">
+		<h2>What is this website about ?</h2>
+	</div>
+
+	<div class = "aboutText">
+		<p>This website is the finished product for my CS25320(Programming for the Web) Assignment #1.The assignment brief states to 
+		"Create a HTML 5 canvas game that uses persistent storage to hold game parameters and leaderboard scores.". This includes a 
+		Help page that provides useful and informative help for setting up the game as well as for playing the game as well as an 
+		About page that containes two or three sentences saying what you have done, and that provides full and accurate credit for 
+		other people’s code, libraries, images sounds and ideas.
+		<br>
+		<p>
+		The idea for my game was to design a game that was similar to the ever popular game"Flappy Bird" which is the game I took inspiration from.
+		I had found a series of tutorial videos all over Youtube which showed me how to code games that are similar to "Flappy Bird" or even the game itself.
+		What I have done for this assignment is take code from multiple different tutorials and combine it to work within my assignment. For the main fundementals 
+		of the canvas game, I had replicated the code from <a href ="https://www.youtube.com/watch?v=3SsYZDJdeXk&list=LL&index=3&t=184s">
+		KnifeCircus's "The Easiest Flappy Bird Tutorial Ever? - Beginner Javascript Game"</a> Youtube Video. The functions are almost identical however I had added my 
+		own comments so that I understand the code as well as renaming the variables in the code to make it easier to understand. I then combine the "canvas.js" code 
+		with <a href = "https://www.youtube.com/watch?v=Z3NVwM9cJpM&list=LL&index=2">Tudor Todorescu's "I've coded flappy bird without canvas, using only HTML , CSS , 
+		JavaScript- Complete Tutorial"</a> to make the game aesthethically pleasing and look similar to the ever famous "Flappy Bird" Game through the use of an external 
+		CSS stylesheet. I have used photoshopped images from the game that I found via Tudor Todorescu's GitHub. 
+		</p>
+		<p>
+		As for the controls, my initial idea was going to set an Eventlistener to allow the user to click the space bar to control the bird. However, I wanted to stay true 
+		to the original game hence I changed the controls to being a single click to cause the bird to "jump" in the game. The user will need to click within the canvas to 
+		control the bird as it goes up and down the canvas.Then I added a gravity function to allow the bird to fall down the canvas. 
+		</p>
+	</div>
+<!--Flappy Bird Image-->
+	<div class = "image">
+		<image src = "flappybirdGameDesign.jpg">
+	</div>
+</body>
+</html>
